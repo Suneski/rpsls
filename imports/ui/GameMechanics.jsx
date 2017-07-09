@@ -72,6 +72,8 @@ const GameMechanics = {
       result = 'Spock is poisoned by lizard - You lose';
     }
 
+    console.log("me: ", me);
+    console.log("computer: ", computer);
     console.log(result);
   }
 }

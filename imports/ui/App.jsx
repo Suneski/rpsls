@@ -35,7 +35,7 @@ export default class App extends Component {
           <option value="spock">Spock</option>
           <option value="lizard">Lizard</option>
         </select>
-        <button onClick={ this.playGame() }>Play</button>
+        <button onClick={ () => this.playGame() }>Play</button>
       </div>
     );
   }
