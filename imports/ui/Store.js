@@ -3,11 +3,12 @@ import { createStore } from 'redux';
 const actions = {
   PLAYER_DECISION: 'PLAYER_DECISION',
   COMPUTER_DECISION: 'COMPUTER_DECISION',
+  RESULT: 'RESULT',
 }
 
 var initialState = {
   playerDecision: 'rock',
-  computerDecision: '',
+  resultVisibility: 'result-invisible',
 };
 
 const reducer = (state = initialState, action) => {
@@ -21,7 +22,14 @@ const reducer = (state = initialState, action) => {
     case actions.COMPUTER_DECISION:
       return Object.assign({}, state, {
         computerDecision: action.computerDecision,
+        resultVisibility: 'result-visible',
       });
+
+    case actions.RESULT:
+      return Object.assign({}, state, {
+        result: action.result,
+      });
+
     default: return state
   }
 }

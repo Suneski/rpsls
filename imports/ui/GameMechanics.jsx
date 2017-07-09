@@ -1,3 +1,5 @@
+import { actions, store } from './Store.js';
+
 const GameMechanics = {
 
   rps(me, computer) {
@@ -83,6 +85,12 @@ const GameMechanics = {
     console.log("me: ", me);
     console.log("computer: ", computer);
     console.log(result);
+
+    store.dispatch({
+      type: actions.RESULT,
+      result: result,
+    });
+
   }
 }
 

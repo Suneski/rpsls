@@ -43,8 +43,11 @@ export default class App extends Component {
           <option value="lizard">Lizard</option>
         </select>
         <button onClick={ () => this.playGame() }>Play</button>
-        <p>Your Pick: {this.state.playerDecision}</p>
-        <p>Computer's Pick: {this.state.computerDecision}</p>
+        <div className={this.state.resultVisibility}>
+          <p>Your Pick: {this.state.playerDecision}</p>
+          <p>Computer's Pick: {this.state.computerDecision}</p>
+          <p>{this.state.result}</p>
+        </div>
       </div>
     );
   }
