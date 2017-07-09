@@ -8,6 +8,7 @@ const actions = {
 
 var initialState = {
   playerDecision: 'Rock',
+  playerDecisionImg: 'images/Rock.png',
   resultVisibility: 'result-invisible',
 };
 
@@ -17,11 +18,13 @@ const reducer = (state = initialState, action) => {
     case actions.PLAYER_DECISION:
       return Object.assign({}, state, {
         playerDecision: action.playerDecision,
+        playerDecisionImg: "images/" + action.playerDecision + ".png",
       });
 
     case actions.COMPUTER_DECISION:
       return Object.assign({}, state, {
         computerDecision: action.computerDecision,
+        computerDecisionImg: "images/" + action.computerDecision + ".png",
         resultVisibility: 'result-visible',
       });
 

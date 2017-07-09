@@ -45,7 +45,10 @@ export default class App extends Component {
         <button onClick={ () => this.playGame() }>Play</button>
         <div className={this.state.resultVisibility}>
           <p>Your Pick: {this.state.playerDecision}</p>
+          <img src={this.state.playerDecisionImg} alt="player choice"/>
+          <p>VS.</p>
           <p>Computer's Pick: {this.state.computerDecision}</p>
+          <img src={this.state.computerDecisionImg} alt="computer choice"/>
           <p>{this.state.result}</p>
         </div>
       </div>
