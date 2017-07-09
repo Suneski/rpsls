@@ -2,26 +2,33 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import GameMechanics from './GameMechanics.jsx';
+import { actions, store } from './Store.js';
 
 export default class App extends Component {
   constructor() {
     super();
-    this.state = {
-      playerDecision: 'rock',
-      computerDecision: '',
-    };
+    this.state = store.getState();
+  }
+
+  componentDidMount() {
+    this.subscribe = store.subscribe(() => this.setState(store.getState()));
   }
 
   playerSelect(evt) {
-    this.setState({
+    store.dispatch({
+      type: actions.PLAYER_DECISION,
       playerDecision: evt.target.value,
     })
   }
 
   playGame() {
     let options = ["rock", "paper", "scissors", "spock", "lizard"];
-    let computerSelection = options[Math.floor(Math.random() * 5)]
-    GameMechanics.rps(this.state.playerDecision, computerSelection);
+    let computerDecision = options[Math.floor(Math.random() * 5)]
+    store.dispatch({
+      type: actions.COMPUTER_DECISION,
+      computerDecision: computerDecision,
+    });
+    GameMechanics.rps(this.state.playerDecision, computerDecision)
   };
 
   render() {
@@ -36,6 +43,8 @@ export default class App extends Component {
           <option value="lizard">Lizard</option>
         </select>
         <button onClick={ () => this.playGame() }>Play</button>
+        <p>Your Pick: {this.state.playerDecision}</p>
+        <p>Computer's Pick: {this.state.computerDecision}</p>
       </div>
     );
   }
