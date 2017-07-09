@@ -51,7 +51,7 @@ const GameMechanics = {
       result = 'Spock smashes Rock - You win.';
     }
     else if (me === 'Spock' && computer === 'Rock') {
-      result = 'Spock vaporizes - You win';
+      result = 'Spock vaporizes Rock - You win';
     }
     else if (me === 'Spock' && computer === 'Paper') {
       result = 'Spock is disproved by Paper - You lose';
