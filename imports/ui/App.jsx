@@ -22,7 +22,7 @@ export default class App extends Component {
   }
 
   playGame() {
-    let options = ["rock", "paper", "scissors", "spock", "lizard"];
+    let options = ["Rock", "Paper", "Scissors", "Spock", "Lizard"];
     let computerDecision = options[Math.floor(Math.random() * 5)]
     store.dispatch({
       type: actions.COMPUTER_DECISION,
@@ -36,11 +36,11 @@ export default class App extends Component {
       <div className="container">
         <p>Rock-Paper-Scissors-Spock-Lizard</p>
         <select onChange={ (evt) => this.playerSelect(evt) }>
-          <option value="rock">Rock</option>
-          <option value="paper">Paper</option>
-          <option value="scissors">Scissors</option>
-          <option value="spock">Spock</option>
-          <option value="lizard">Lizard</option>
+          <option value="Rock">Rock</option>
+          <option value="Paper">Paper</option>
+          <option value="Scissors">Scissors</option>
+          <option value="Spock">Spock</option>
+          <option value="Lizard">Lizard</option>
         </select>
         <button onClick={ () => this.playGame() }>Play</button>
         <div className={this.state.resultVisibility}>

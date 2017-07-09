@@ -7,7 +7,7 @@ const actions = {
 }
 
 var initialState = {
-  playerDecision: 'rock',
+  playerDecision: 'Rock',
   resultVisibility: 'result-invisible',
 };
 
