@@ -72,6 +72,14 @@ const GameMechanics = {
       result = 'Spock is poisoned by lizard - You lose';
     }
 
+    // ELSE-CASE
+    else if (me === computer) {
+      result = 'It\'s a draw!';
+    }
+    else {
+      result = "Error! Try again!"
+    }
+
     console.log("me: ", me);
     console.log("computer: ", computer);
     console.log(result);
