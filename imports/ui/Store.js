@@ -4,12 +4,16 @@ const actions = {
   PLAYER_DECISION: 'PLAYER_DECISION',
   COMPUTER_DECISION: 'COMPUTER_DECISION',
   RESULT: 'RESULT',
+  PLAYER_WIN: 'PLAYER_WIN',
+  COMPUTER_WIN: 'COMPUTER_WIN',
 }
 
 var initialState = {
   playerDecision: 'Rock',
   playerDecisionImg: 'images/Rock.png',
   resultVisibility: 'result-invisible',
+  playerScore: 0,
+  computerScore: 0,
 };
 
 const reducer = (state = initialState, action) => {
@@ -31,6 +35,16 @@ const reducer = (state = initialState, action) => {
     case actions.RESULT:
       return Object.assign({}, state, {
         result: action.result,
+      });
+
+    case actions.PLAYER_WIN:
+      return Object.assign({}, state, {
+        playerScore: action.playerScore,
+      });
+
+    case actions.COMPUTER_WIN:
+      return Object.assign({}, state, {
+        computerScore: action.computerScore,
       });
 
     default: return state
