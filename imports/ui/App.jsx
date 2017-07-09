@@ -34,13 +34,13 @@ export default class App extends Component {
   render() {
     return (
       <div className="container">
-        <p>Rock-Paper-Scissors-Spock-Lizard</p>
+        <p>Rock-Paper-Scissors-Lizard-Spock</p>
         <select onChange={ (evt) => this.playerSelect(evt) }>
           <option value="Rock">Rock</option>
           <option value="Paper">Paper</option>
           <option value="Scissors">Scissors</option>
-          <option value="Spock">Spock</option>
           <option value="Lizard">Lizard</option>
+          <option value="Spock">Spock</option>
         </select>
         <button onClick={ () => this.playGame() }>Play</button>
         <div className={this.state.resultVisibility}>
