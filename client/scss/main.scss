@@ -1,0 +1,38 @@
+@import 'reset';
+@import 'nav';
+@import 'selection';
+
+.container {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  background-color: grey;
+  overflow: auto;
+  border-left:5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+button {
+  margin-left: 15px;
+}
+
+.result-invisible {
+  display: none;
+}
+
+.result-visible {
+  display: block;
+}
+
+.result {
+  clear: both;
+}
+
+.versus {
+  margin: 0 30px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

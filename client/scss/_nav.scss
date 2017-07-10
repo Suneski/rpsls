@@ -1,0 +1,18 @@
+nav {
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+}
+
+.title, #score {
+  padding-top: 5px;
+}
+
+.title {
+  float: left;
+}
+
+#score{
+  float: right;
+}
