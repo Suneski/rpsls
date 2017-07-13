@@ -31,24 +31,24 @@
 
 @media (max-width: 900px) {
   .selection {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     img {
       display: block;
       margin: 0 auto;
-      height: 50%;
+      height: 80%;
     }
   }
 
   .selection-zone {
-    width: 358px;
-    height: 106px;
-    outline: 1px solid orange;
+    width: 438px;
+    height: 126px;
     overflow: auto;
+    font-size: 10px;
   }
 
-  .versus {
-    margin: 0 20px;
+  .versus img {
+    height: 100%;
   }
 }
 
@@ -63,5 +63,27 @@
   #score {
     font-size: 12px;
     padding-top: 4px;
+  }
+}
+
+@media (max-width: 580px) {
+  .selection-zone {
+    height: 648px;
+    width: 206px;
+  }
+  .selection {
+    width: 200px;
+    height: 200px;
+    float: none;
+    font-size: 20px;
+    img {
+      height: 80%;
+    }
+  }
+  .versus {
+    margin: 15px 0;
+    img {
+      height: 100%;
+    }
   }
 }
