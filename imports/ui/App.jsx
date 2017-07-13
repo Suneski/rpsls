@@ -43,8 +43,8 @@ export default class App extends Component {
         </nav>
 
         <div>
-          <p>Choose Your Weapon</p>
-          <select onChange={ (evt) => this.playerSelect(evt) }>
+          <p className="choose-weapon">Choose Your Weapon</p>
+          <select className="select-menu" onChange={ (evt) => this.playerSelect(evt) }>
             <option value="Rock">Rock</option>
             <option value="Paper">Paper</option>
             <option value="Scissors">Scissors</option>

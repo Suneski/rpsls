@@ -120,9 +120,11 @@ nav {
 
 @media (max-width: 770px) {
   nav {
-    height: 35px;
+    height: 40px;
     text-align: center; }
-  .title, #score {
+  .title {
+    font-size: 15px; }
+  #score {
     font-size: 12px;
     padding-top: 4px; } }
 
@@ -154,3 +156,10 @@ button {
   .versus img {
     height: 100%;
     width: 100%; }
+
+.choose-weapon {
+  margin: 10px 0;
+  font-size: 40px; }
+
+.select-menu {
+  margin-bottom: 15px; }
