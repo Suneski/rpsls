@@ -37,7 +37,8 @@ export default class App extends Component {
         <nav>
           <p className="title">Rock-Paper-Scissors-Lizard-Spock</p>
           <p className={this.state.resultVisibility} id="score">
-            Your Score: {this.state.playerScore} Computer's Score: {this.state.computerScore}
+            <span id="player-score">Your Score: {this.state.playerScore} </span>
+            <span id="computer-score">Computer's Score: {this.state.computerScore}</span>
           </p>
         </nav>
 
