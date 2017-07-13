@@ -58,7 +58,7 @@ export default class App extends Component {
 
           <div className="selection-zone">
             <div className="selection player-selection">
-              <p>Your Pick: {this.state.playerDecision}</p>
+              <p>Your Pick:</p> <p>{this.state.playerDecision}</p>
               <img src={this.state.playerDecisionImg} alt="player choice"/>
             </div>
 
@@ -67,7 +67,8 @@ export default class App extends Component {
             </div>
 
             <div className="selection computer-selection">
-              <p>Computer's Pick: {this.state.computerDecision}</p>
+              <p>Computer's Pick:</p>
+              <p>{this.state.computerDecision}</p>
               <img src={this.state.computerDecisionImg} alt="computer choice"/>
             </div>
           </div>
