@@ -149,7 +149,13 @@ button {
   display: block; }
 
 .result {
-  clear: both; }
+  clear: both;
+  font-size: 35px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+  line-height: 1.3; }
 
 .versus {
   margin: 0 30px; }
@@ -159,7 +165,11 @@ button {
 
 .choose-weapon {
   margin: 10px 0;
-  font-size: 40px; }
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+  line-height: 1.3; }
 
 .select-menu {
   margin-bottom: 15px; }
