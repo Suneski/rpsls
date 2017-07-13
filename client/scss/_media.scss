@@ -1,0 +1,64 @@
+@media (max-width: 1270px) {
+  .selection {
+    width: 200px;
+    height: 200px;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 85%;
+      width: 100%;
+    }
+  }
+
+  .selection-zone {
+    width: 678px;
+    height: 306px;
+  }
+}
+
+@media (max-width: 1050px) {
+  nav {
+    height: 70px;
+    text-align: center;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .title, #score {
+    float: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .selection {
+    width: 100px;
+    height: 100px;
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 50%;
+    }
+  }
+
+  .selection-zone {
+    width: 358px;
+    height: 106px;
+    outline: 1px solid orange;
+    overflow: auto;
+  }
+
+  .versus {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  nav {
+    height: 35px;
+    text-align: center;
+  }
+  .title, #score {
+    font-size: 12px;
+    padding-top: 4px;
+  }
+}

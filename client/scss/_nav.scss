@@ -6,7 +6,7 @@ nav {
 }
 
 .title, #score {
-  padding-top: 5px;
+  padding-top: 6px;
 }
 
 .title {
@@ -15,4 +15,9 @@ nav {
 
 #score{
   float: right;
+  // outline: 1px solid orange;
+}
+
+#computer-score {
+  margin-left: 20px;
 }

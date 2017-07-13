@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -52,13 +53,16 @@ nav {
   font-size: 20px; }
 
 .title, #score {
-  padding-top: 5px; }
+  padding-top: 6px; }
 
 .title {
   float: left; }
 
 #score {
   float: right; }
+
+#computer-score {
+  margin-left: 20px; }
 
 .selection {
   width: 300px;
@@ -76,6 +80,52 @@ nav {
   width: 978px;
   height: 306px; }
 
+@media (max-width: 1270px) {
+  .selection {
+    width: 200px;
+    height: 200px; }
+    .selection img {
+      display: block;
+      margin: 0 auto;
+      width: 85%;
+      width: 100%; }
+  .selection-zone {
+    width: 678px;
+    height: 306px; } }
+
+@media (max-width: 1050px) {
+  nav {
+    height: 70px;
+    text-align: center; }
+  .title {
+    font-size: 30px; }
+  .title, #score {
+    float: none; } }
+
+@media (max-width: 900px) {
+  .selection {
+    width: 100px;
+    height: 100px; }
+    .selection img {
+      display: block;
+      margin: 0 auto;
+      height: 50%; }
+  .selection-zone {
+    width: 358px;
+    height: 106px;
+    outline: 1px solid orange;
+    overflow: auto; }
+  .versus {
+    margin: 0 20px; } }
+
+@media (max-width: 770px) {
+  nav {
+    height: 35px;
+    text-align: center; }
+  .title, #score {
+    font-size: 12px;
+    padding-top: 4px; } }
+
 .container {
   width: 80%;
   margin: 20px auto 0 auto;
@@ -84,7 +134,8 @@ nav {
   overflow: auto;
   border-left: 5px solid black;
   border-right: 5px solid black;
-  border-bottom: 5px solid black; }
+  border-bottom: 5px solid black;
+  font-family: 'Orbitron', sans-serif; }
 
 button {
   margin-left: 15px; }
@@ -103,31 +154,3 @@ button {
   .versus img {
     height: 100%;
     width: 100%; }
-
-@media (max-width: 1270px) {
-  .selection {
-    width: 200px;
-    height: 200px; }
-    .selection img {
-      display: block;
-      margin: 0 auto;
-      height: 100%; }
-  .selection-zone {
-    width: 678px;
-    height: 306px; } }
-
-@media (max-width: 900px) {
-  .selection {
-    width: 100px;
-    height: 100px; }
-    .selection img {
-      display: block;
-      margin: 0 auto;
-      height: 50%; }
-  .selection-zone {
-    width: 358px;
-    height: 106px;
-    outline: 1px solid orange;
-    overflow: auto; }
-  .versus {
-    margin: 0 20px; } }
